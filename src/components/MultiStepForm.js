@@ -72,8 +72,8 @@ const MultiStepForm = () => {
         {step === 3 && <Step3Confirmation formData={formData} />}
       </div>
       <div className="buttons mt-3">
-        {step > 1 && <button className="btn btn-secondary" onClick={handleBack}>Back</button>}
-        {step < 3 && <button className={`btn btn-primary ${step === 2 && 'ms-2'}`}   onClick={handleNext}>Next</button>}
+        {step > 1 && <button className="btn btn-secondary me-2" onClick={handleBack}>Back</button>}
+        {step < 3 && <button className= "btn btn-primary"   onClick={handleNext}>Next</button>}
         {step === 3 && <button className="btn btn-success">Submit</button>}
       </div>
     </div>
